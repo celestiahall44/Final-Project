@@ -20,6 +20,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
 }
 
 .row {
@@ -32,5 +33,54 @@ nav {
 .nav__row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav__logo--icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #6c2bd9;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.nav__logo--title {
+    font-weight: 800px;
+    font-size: 24px;
+    color: #1f2937;
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.nav__link {
+    color: #1f2937;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login {
+    margin-left: 20px;
+}
+
+.nav__link--sign-up {
+    background-color: #6c2bd9;
+    color: #fff;
+    padding: 18px 22px;
+    border-radius: 9999px;
 }
 
