@@ -148,7 +148,7 @@ header .row{
  .header__email--btn {
     z-index: 2;
     margin: 8px;
-    height: calc (100% - 16px);
+    height: calc(100% - 16px);
     border-radius: 500px;
     width: 160px;
     border: none;
@@ -159,6 +159,13 @@ header .row{
  }
 
  .header__customers--title {
+    margin-top: 80px;
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0.5;
+ }
+
+ .header__customers--img {
     margin-top: 16px;
     opacity: 0.5;
  }
