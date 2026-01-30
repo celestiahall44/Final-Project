@@ -234,7 +234,7 @@ header .row{
     padding: 96px 0;
 }
 
-#features .row_narrow{
+#features .row_narrow {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,7 +244,6 @@ header .row{
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
-    display: flex;
 }
 
 .section__tag {
