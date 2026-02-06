@@ -23,6 +23,9 @@
                     <li><a href="#" class="nav__link login">Login</a></li>
                     <li><a href="#" class="nav__link nav__link--sign-up">Sign Up</a></li>
                 </ul>
+                <button class="btn__menu" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </nav>
         <header>
@@ -441,5 +444,15 @@
             </div>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.nav__links');
+            const menuBtn = document.querySelector('.btn__menu i');
+            menu.classList.toggle('menu__open');
+            menuBtn.classList.toggle('fa-bars');
+            menuBtn.classList.toggle('fa-times');
+            document.body.classList.toggle('menu__open');
+        }
+    </script>
 </body>
 </html>
