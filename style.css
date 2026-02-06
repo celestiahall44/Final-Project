@@ -65,10 +65,8 @@ header {
 }
 
 nav {
+   padding-top: 32px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
 }
 
 .row {
@@ -81,54 +79,65 @@ nav {
 .nav__row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .nav__logo {
     display: flex;
     align-items: center;
-    gap: 14px;
+    margin: 8px 0;
+    padding-bottom: 4px;
 }
 
 .nav__logo--icon {
     width: 40px;
     height: 40px;
-    border-radius: 10px;
-    background-color: #6c2bd9;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 22px;
 }
 
 .nav__logo--title {
-    font-weight: 900px;
+    font-weight: 900;
     font-size: 24px;
-    color: #1f2937;
+    margin-left: 12px;
+    padding-bottom: 2px;
+    letter-spacing: 0.6px;
 }
 
 .nav__links {
     display: flex;
     align-items: center;
-    gap: 36px;
-    text-decoration: none;
+    padding-bottom: 2px;
     list-style: none;
 }
 
-
 .nav__link {
-    color: #1f2937;
+    font-size: 14px;
     font-weight: 600;
+    padding-top: 4px;
+    letter-spacing: 0.35px;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    margin: 0 24px;
+    color: #243e63;
     text-decoration: none;
-    transition: all 300ms ease;
-
+    transition: color 300ms ease;
 }
 
-.nav__link:hover {
-    color: #6415ff;
-    
+.nav__link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: #6415ff;
+    transition: all 300ms ease;
+    opacity: 0;
+}
+
+.nav__link:hover:after {
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    transform: none;
 }
 
 .login {
@@ -136,15 +145,34 @@ nav {
 }
 
 .nav__link--sign-up {
-    background-color: #6c2bd9;
-    color: #fff;
-    padding: 18px 22px;
+    margin: 0;
+    padding: 10px 32px;
+    margin-top: 2px;
     border-radius: 9999px;
+    color: #fff;
+    background-color: #6415ff;
+    line-height: 1.5;
+    border: none;
+    width: auto;
+    transition: all 300ms ease;
+}
+.nav__link--sign-up {
+    margin: 0;
+    padding: 10px 32px;
+    margin-top: 2px;
+    border-radius: 9999px;
+    color: #fff;
+    background-color: #6415ff;
+    line-height: 1.5;
+    border: none;
+    width: auto;
+    transition: all 300ms ease;
 }
 
 .nav__link--sign-up:hover {
     background-color: #5011cc;
     color:#fff;
+    
 }
 
 /*HEADER*/
